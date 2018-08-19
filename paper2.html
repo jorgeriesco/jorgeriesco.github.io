@@ -8,11 +8,29 @@
   <body>
     <h1> <a href="index.html">Back</a> </h1>
     <div class="row center-xs">
-      <div class="col-xs-8 col-md-6 paper">
+      <div class="col-xs-8 col-md-10 paper">
         <div class="text-left">
-          <h3> Blog: Collaborative Filtering Recommender System </h1>
+          <h3> Blog: Collaborative Filtering Recommender System </h3>
           <ul class="list-group">
-            <li class="list-group-item"><p></p></li>
+            <li class="list-group-item">
+              <p>En este paper se plantea primero una introduccion del concepto de Collaborating Filtering System con una idea motivacional. Se dice que cuando una persona necesita tomar una decicion de compra sobre un articulo,
+               muchas veces basa su decisión en las opiniones de los demás.  La limitación acá y al mismo tiempo la oportunidad que surge es que la persona como mucho podrá conocer las opiniones
+               de cientos de personas. Usando algoritmos computacionales y grandes cantidades de datos se pueden usar las opiniones de miles de personas para decidir si el articulo es adecuado o no para la persona. Me
+               parece una buena forma de introducir el tema ya que es simple de entender.
+              </p>
+              <p>Se utiliza mucho en todo el paper el ejemplo de las peliculas y poco se refiere a otros casos. Creo que se deberian mostrar más ejemplos en los que un CF System se puede ocupar. Por ejemplo en deciciones como lugares para viajar, carreras que estudiar, cursos que
+               tomar o candidatos que votar. Así se daría una mejor vision de la importancia y potencial de estos sistemas.
+              </p>
+              <p>No se plantean soluciones actuales para lograr subsampling y clustering, y así reducir la cantidad de informacion a procesar. Quizás algún ejemplo de cómo hacerlo
+              puede hacer entender mejor la dificultad de dichos desafios.</p>
+              <p>En la página 304, bajo el titulo "Item-Based Nearest Neighbor Algorithms", se prpone la siguente fórmula de predicción de rating.</p>
+              <img src="imgs/Item-Based pred.png">
+              <p>Al parecer hay un pequeño error de tipeo. La varaible r<SUB>ui</SUB> debería ser r<SUB>uj</SUB>.</p>
+              <p>En la sección de Probabilistic Algorithms no se plantea una forma de calcular la probabilidad de un rating dado un usuario y un item o una clase y un item. Sería bueno tener ejemplos de
+               cómo llegar a esos números. Por otro lado en esta sección se da cuenta de una gran ventaja de usar estos algoritmos que es que te entregan toda una
+               distribución de probabilidades para los ratings, tomando así estos valores como el nivel de confianza para cada rating.</p>
+
+            </li>
           </ul>
     </div>
     </div>

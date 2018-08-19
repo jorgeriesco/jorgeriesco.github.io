@@ -19,18 +19,21 @@
               <p>Se exponen dos soluciones básicas, las cuales no resuelven el problema:</p>
               <p>Score = (Positive ratings) − (Negative ratings)</p>
               <p>Score = (Positive ratings)/(Negative ratings)</p>
-              <p>Luego se propone una solución más acertada, la cual se basa en en el intervalo de confianza para un parametro de bernoulli desarrollada por Edwin B. Wilson.
+              <p>No son buena soluciones pq no toman en consideración el tamaño de la muestra, valorando igual elementos con cantidades de raitngs muy distintas.</p>
+              <p>Luego se propone una solución más acertada, la cual se basa en en el intervalo de confianza para un parametro de bernoulli (en este caso la media) desarrollada por Edwin B. Wilson.
               En esta formula se calcula el límite inferior del intervalo de confianza, el cual pasa a ser el Score que se está buscando.</p>
               <img src="imgs/lowerBound.png">
               <p>En esta formula p&#770 es la fracción de ratings positivos en los ratings totales y n son los ratings totales.</p>
               <p>Esta formula también se puede adaptar a casos en los que no existen ratings negativos, haciendo que uno de los positivos, preferentemente la media del intervalo, sea el "cero". Por lo tanto los menores a
               este número serán los negativos y los mayores los positivos.</p>
+              <p class="sub-title">Analisis:</p>
+              <p>Esta fórmula funciona de mejor forma que las demás porque toma en consideración el tamaño de la muestra además del desnivel entre positivos y negativos, generando un número más cercano a la realidad.</p>
               <p class="sub-title">Discución:</p>
-              <p>Esta solución funciona muy bien para ratings binarios, en que hay un negativo y un positivo, sin embargo no es perfecta para un dominio más grande.
-              Una posible solución a esto es considerar la distancia d de un rating a cero como d ratings distintos. Por ejemplo si un usuario ingresa como
-              rating un 5 a un cierto elemento, entonces se considera como 5 ratings de valor 1. Sin embargo esta solución no es la mejor, ya que si por ejemplo un elemento
+              <p>Esta solución funciona muy bien para ratings de dominio binario, sin embargo no es perfecta para un dominio más grande.
+              Una posible solución a esto es considerar la distancia d de un rating a cero como d ratings distintos. Por ejemplo si un usuario ingresa
+              un rating de valor 5 a un cierto elemento, entonces se considera como 5 ratings de valor 1. Sin embargo esta solución no es la mejor, ya que si por ejemplo un elemento
               tiene pocos ratings positivos, pero de valores muy grandes, no es a ciencia cierta verdad que ese elemento es de la misma "calidad" que otro con muchos ratings, pero
-              con valoraciones más bajas. En este sentido tal vez sea más acertado valorar más un elemento con 100 ratings de valor 10 que uno con 5 ratings de valor 300, ya que la muestra
+              con valoraciones más bajas. En este sentido tal vez sea más acertado valorar más un elemento con 100 ratings de valor 10 que uno con 20 ratings de valor 50, ya que la muestra
               del primero es más abultada y probablemente más cercana a la realidad.</p>
               <p>Siguiendo con el problema descrito, pueden existir otros criterios que se ajusten mejor a la realidad que el mencionado. Se propone entonces ponderar
               un raiting por un valor entre cero y uno que decrece a medida que el rating sube y asi obtener un valor que equivaldría a una cantidad de ratings independientes, pero que sería menor
