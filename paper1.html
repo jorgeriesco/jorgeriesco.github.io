@@ -1,15 +1,36 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
 <html>
   <head>
-    <title> Queries </title>
+    <title> Blog </title>
   </head>
   <body>
+    <h1> <a href="index.html">Back</a> </h1>
     <div class="row center-xs">
-      <div class="col-xs-8 col-md-6">
+      <div class="col-xs-8 col-md-10 paper">
         <div class="text-left">
-      <h1> chao </h1>
-      <a href="index.html">link text</a>
+          <h3> Blog: How not to sort by Average Rating </h3>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <p>El problema propuesto es el siguiente: Al tener una gran cantidad de elementos clasificados por una gran cantidad de usuarios a traves de ratings positivos y negativos, cómo
+              se puede entonces rankear dichos elementos de manera que efetivamente un elemento que es mejor que otro esté más arriba en el ranking. Esto supone lógicamente
+               encontrar un score para los elementos que permita rankearlos.</p>
+              <p>Se exponen dos soluciones básicas, las cuales no resuelven el problema:</p>
+              <p>Score = (Positive ratings) − (Negative ratings)</p>
+              <p>Score = (Positive ratings)/(Negative ratings)</p>
+              <p>Luego propone una solución más acertada, la cual se basa en en el intervalo de confianza para un parametro de bernoulli desarrollada por Edwin B. Wilson.
+              En esta formula se calcula el límite inferior del intervalo de confianza, el cual pasa a ser el Score que se está buscando.</p>
+              <img src="imgs/lowerBound.png">
+              <p>En esta formula p&#770 es la fracción de ratings positivos en los ratings totales y n son los ratings totales.</p>
+              <p>Esta formula también se puede adaptar a casos en los que no existen ratings negativos, haciendo que uno de los positivos, preferentemente la media del intervalo sea el cero, los menores a
+              ese los negativos y los mayores los positivos.</p>
+              <p class="sub-title">Discución:</p>
+              <p>Esta solución funciona muy bien para ratings binarios, en que hay un negativo y un positivo, sin embargo no es perfecto para un dominio más grande.
+              Esto se debe a que no se considera en el cálculo la distancia al cero y todos los positivos tienen el mismo peso al igual que los negativos.
+              Esto se puede ver bien reflejado en el siguiente ejemplo:</p>
+            </li>
+          </ul>
     </div>
     </div>
     </div>

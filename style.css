@@ -1,0 +1,22 @@
+
+
+.paper {
+  left: 10%;
+}
+.index {
+  left: 10%;
+}
+
+p {
+  text-align: justify;
+}
+
+.my-width {
+  width: 70%;
+}
+
+.sub-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
