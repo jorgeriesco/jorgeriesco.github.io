@@ -13,30 +13,39 @@
           <h3> Blog: Collaborative Filtering Recommender System </h3>
           <ul class="list-group">
             <li class="list-group-item">
-              <p>En este paper se plantea primero una introduccion del concepto de Collaborating Filtering System con una idea motivacional. Se dice que cuando una persona necesita tomar una decicion de compra sobre un articulo,
-               muchas veces basa su decisión en las opiniones de los demás.  La limitación acá y al mismo tiempo la oportunidad que surge es que la persona como mucho podrá conocer las opiniones
-               de cientos de personas. Usando algoritmos computacionales y grandes cantidades de datos se pueden usar las opiniones de miles de personas para decidir si el articulo es adecuado o no para la persona. Me
-               parece una buena forma de introducir el tema ya que es simple de entender.
+              <p>En este paper se plantea primero una introduccion del concepto de Collaborating Filtering System con una idea motivacional. Me
+               parece una buena forma de introducir el tema, ya que es simple de entender y da cuenta de alguna manera del potencia de los CF Systems.
               </p>
               <p>Se utiliza mucho en todo el paper el ejemplo de las peliculas y poco se refiere a otros casos. Creo que se deberian mostrar más ejemplos en los que un CF System se puede ocupar. Por ejemplo en deciciones como lugares para viajar, carreras que estudiar, cursos que
                tomar o candidatos que votar. Así se daría una mejor vision de la importancia y potencial de estos sistemas.
               </p>
+              <p>Durante el paper se habla de Content-Based Filtering como un sistema en el cual consideran las caracteristicas de los articulos ofrecidos. También se
+               plantea la la controversia entre ratings explicitos y ratings implicitos y se menciona que bajo el sistema de ratings implicitos, hay mayor incertudimbre, pero
+               si está bien implementado, puede haber mucha mayor precisión en las predicciones. Sin embargo creo no haber leido una opción que combina todos estos sistemas recientemente mencionados.
+               Considero que sería más acertado usar un sistema en el cual el usuario califica 3 o 4 caracteristicas del articulo y no el articulo como un todo. De esta forma la predicción puede ser más precisa porque considera
+               más variables y el usuario puede filtrar la recomendación seleccionando las caracteristicas que le interesan. Logicamente este sistema debe tener una importante dificultad en lograr un algoritmo eficiente y hacer que los usuarios
+               se animen a clasificar 3 o 4 caracteristicas, pero la opción es buena para ser planteada.</p>
+              <p class="sub-title">9.3.1 Non-Probabilistic Algorithms - Practical Challenges of User-Based Algorithms</p>
               <p>No se plantean soluciones actuales para lograr subsampling y clustering, y así reducir la cantidad de informacion a procesar. Quizás algún ejemplo de cómo hacerlo
               puede hacer entender mejor la dificultad de dichos desafios.</p>
-              <p>En la página 304, bajo el titulo "Item-Based Nearest Neighbor Algorithms", se prpone la siguente fórmula de predicción de rating.</p>
+              <p class="sub-title">9.3.1 Non-Probabilistic Algorithms - Item-Based Nearest Neighbor Algorithms</p>
+              <p>En esta sección se propone la siguente fórmula de predicción de rating.</p>
               <img src="imgs/Item-Based pred.png">
               <p>Al parecer hay un pequeño error de tipeo. La varaible r<SUB>ui</SUB> debería ser r<SUB>uj</SUB>.</p>
-              <p>En la sección de Probabilistic Algorithms no se plantea una forma de calcular la probabilidad de un rating dado un usuario y un item o una clase y un item. Sería bueno tener ejemplos de
+              <p class="sub-title">9.3.2 Probabilistic Algorithms</p>
+              <p>En esta sección no se plantea una forma de calcular la probabilidad de un rating dado un usuario y un item, o una clase y un item. Sería bueno tener ejemplos de
                cómo llegar a esos números. Por otro lado en esta sección se da cuenta de una gran ventaja de usar estos algoritmos, la cual es que entregan toda una
                distribución de probabilidades para los ratings, tomando así estos valores como el nivel de confianza para cada rating.</p>
-              <p>En la sección "The Challenge of Collecting Explicit Ratings" se plantean razones por las cuales un usuario se prodría animar a
+               <p class="sub-title">9.4.2 The Challenge of Collecting Explicit Ratings</p>
+              <p>En esta sección se plantean razones por las cuales un usuario se prodría animar a
                 calificar los articulos de algún sitio. Puedo reforzar un poco esta idea usando el ejemplo de la encuesta docente de ingeniería en la UC del último semestre.
-                Esta encuesta fue respondida por el 42% de los estudiantes de pregrado, en que el total de estudiantes es de 4.441 y enconcecuencia los que contestaron fueron 1.865. Si bien esta encuesta no tiene fines relacionados con programas recomendadores, si
+                Esta encuesta fue respondida por el 42% de los estudiantes de pregrado, en que el total de estudiantes es de 4.441 y en concecuencia los que contestaron fueron 1.865. Si bien esta encuesta no tiene fines relacionados con programas recomendadores, si
                 da cuenta de la disposición a colaborar de personas de una comunidad, sean cuales sean las motivaciones.</p>
-                <p>Otra forma de hacer que los usuarios califiquen los productos de un sitio, la cual no es mencionada, es mostrar forzosamente un calificador. De esta forma, es probable que casi todos
-                  los usuarios califiquen el articulo, ya que no les significa un esfuerzo mayor. Esto se puede ver relfejado en uber, ya que al terminar el viaje, en la aplicación aparecen las 5 estrellas para calificar al conductor. También
-                  se puede apreciar en los juegos de celular, en los cuales muchas veces aparece un cuadro en la pantalla en el que te piden calificar el juego.</p>
-                <p></p>
+              <p>Otra forma de hacer que los usuarios califiquen los productos de un sitio, la cual no es mencionada, es mostrar forzosamente un calificador. De esta forma, es probable que casi todos
+                los usuarios califiquen el articulo, ya que no les significa un esfuerzo mayor. Esto se puede ver relfejado en la aplicación Uber por ejemplo, ya que al terminar el viaje, en la aplicación aparecen las 5 estrellas para calificar al conductor. También
+                se puede apreciar en los juegos de celular, en los cuales muchas veces aparece un cuadro en la pantalla en el que se le pide al usuario calificar el juego.</p>
+              <p></p>
+
 
 
             </li>
