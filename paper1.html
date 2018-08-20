@@ -19,7 +19,7 @@
               <p>Se exponen dos soluciones básicas, las cuales no resuelven el problema:</p>
               <p>Score = (Positive ratings) − (Negative ratings)</p>
               <p>Score = (Positive ratings)/(Negative ratings)</p>
-              <p>No son buena soluciones pq no toman en consideración el tamaño de la muestra, valorando igual elementos con cantidades de raitngs muy distintas.</p>
+              <p>No son buenas soluciones porque no toman en consideración el tamaño de la muestra, valorando igual elementos con cantidades de raitngs muy distintas.</p>
               <p>Luego se propone una solución más acertada, la cual se basa en en el intervalo de confianza para un parametro de bernoulli (en este caso la media) desarrollada por Edwin B. Wilson.
               En esta formula se calcula el límite inferior del intervalo de confianza, el cual pasa a ser el Score que se está buscando.</p>
               <img src="imgs/lowerBound.png">
@@ -38,6 +38,8 @@
               <p>Siguiendo con el problema descrito, pueden existir otros criterios que se ajusten mejor a la realidad que el mencionado. Se propone entonces ponderar
               un raiting por un valor entre cero y uno que decrece a medida que el rating sube y asi obtener un valor que equivaldría a una cantidad de ratings independientes, pero que sería menor
               al obtenido con la propuesta anterior. De esta forma se valorarían más los ratings más cercanos al cero.</p>
+              <p>Otra crítica al paper es que no explica bien de donde viene la formula de Edwin B. Wilson y cual es su utilidad matemática. Para alguien inexperto es dificil entender para que sirve y porque funciona
+              tan bien en este contexto u otro.</p>
             </li>
           </ul>
     </div>
