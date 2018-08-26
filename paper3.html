@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html>
+  <head>
+    <title> Blog </title>
+  </head>
+  <body>
+    <h1> <a href="index.html">Back</a> </h1>
+    <div class="row center-xs">
+      <div class="col-xs-8 col-md-10 paper">
+        <div class="text-left">
+          <h3> Blog: Matrix Factorization Techniques for Recommender Systems </h3>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <p class="sub-title">A BASIC MATRIX FACTORIZATION MODEL</p>
+              <p>On this chapter, it says the major callenge is computing the mapping of each
+              item and user to factor verctors q<SUB>i</SUB>, p<SUB>u</SUB> &#8712; &#8477;<sup>f</sup>
+              , however it doesn't explain an specific way how to for identifying latent factors of
+              those vectors. It just mentions SVD technique and its difficulties, but not what it
+              does specifictly.</p>
+              <p>Moreover, for SVD's diffidulties, it explain the missing values in the user-item
+              matrix are a problem for getting the latent factors, and it mentions
+              solve this problem by different ways to fill the missing ratings, but it doesn´t
+              says specifictly how to.</p>
+              <p class="sub-title">LEARNING ALGORITHMS - Alternating least squares</p>
+              <p>It isn't clear how to apply the ALS method to minimize the regularized
+              squared error. It explain generaly how to do it, but is not enough clear.
+              I can't imagine how the procedure is by using ALS.</p>
+              <p class="sub-title">ADDITIONAL INPUT SOURCES</p>
+              <p>In the formulas, it use &Sigma; <sub>i &#8712; N(u) </sub> x<sub>i</sub>
+              to represent a vector for a user, but if I'm not wrong it doesn't says
+              what is x<sub>i</sub>, or at least I don't understand well how to get
+              that value.</p>
+              <p class="sub-title">NETFLIX PRIZE COMPETITION</p>
+              <p>The figure 4 is an excelent reference of how this techniques and
+              additional constrains improve the Matrix factorization model's accuracy.
+              It surprice me how the root-mean-square error decrese considerably by adding
+              these methods.</p>
+            </li>
+          </ul>
+    </div>
+    </div>
+    </div>
+
+  </body>
+</html>
