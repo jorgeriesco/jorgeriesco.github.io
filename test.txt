@@ -1,0 +1,16 @@
+dummy object:
+- Elemnento básico
+- Str o int
+- No se usa, más haya de ser un parametro.
+- No importa su valor.
+
+Fake objects:
+- Objetos o funciones.
+- Copian el comportamiento de una componente del sistema y lo simplifican.
+
+Stub:
+- Simplifican al extremo una componente del sistema solo retornando un valor
+y ahorrando tiempo de ejecución.
+
+Spy:
+- Es un registro de las interacciones de los objetos con el test.

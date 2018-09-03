@@ -1,0 +1,6 @@
+Los datos son entregados únicamente en formato XML,
+utilizando el sistema anglosajón de unidades. Sin embargo para realizar el
+procesamiento se decide usar una librería que solo permite importar en el
+sistema metrico de unidades y en formato JSON. Para solucionar esta incongruencia
+en los datos se necesita un adapter que reciba los datos en XML con el sistema
+anglosajón y los convierta a JSON en el sistema métrico.
